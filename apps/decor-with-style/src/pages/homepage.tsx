@@ -65,7 +65,7 @@ const Homepage = () => {
   ];
 
   return (
-    <div className="bg-orange-50 min-h-screen ">
+    <div className="bg-orange-50 text-black min-h-screen ">
       <div className="flex justify-between py-3 px-2 overflow-hidden ">
         <div className="flex items-center gap-3 font-semibold ">
           {navOptions.map((val, i) => (
@@ -209,6 +209,7 @@ const Homepage = () => {
       <div className="flex justify-center ">
         <div className="w-full max-w-7xl px-10 py-4 ">
           <div className="font-sans md:text-xl ">+91 97160 23614</div>
+          <div className="font-sans md:text-xl ">+91 90152 69875</div>
           <div className="font-sans md:text-xl py-3 ">
             decorwithstyle44@gmail.com
           </div>
