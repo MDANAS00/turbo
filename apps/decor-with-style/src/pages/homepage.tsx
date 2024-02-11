@@ -48,19 +48,19 @@ const Homepage = () => {
   const social = [
     {
       name: "Instagram",
-      link: "https://www.google.com/",
+      link: "https://www.instagram.com/decorwith.style?igsh=MWswOWQ4anp5cTFrNg==",
     },
     {
       name: "Facebook",
-      link: "https://www.google.com/",
+      link: "https://www.facebook.com/decorwithstyle44?mibextid=2JQ9oc",
     },
     {
       name: "Youtube",
-      link: "https://www.google.com/",
+      link: "https://www.youtube.com/@DecorWithStyle",
     },
     {
       name: "Maps",
-      link: "https://www.google.com/",
+      link: "https://maps.app.goo.gl/fKqMuBwv3zeDJP7RA",
     },
   ];
 
