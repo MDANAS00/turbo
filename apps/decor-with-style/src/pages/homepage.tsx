@@ -1,40 +1,44 @@
-import HomePage from "../../public/HomePage.jpg";
-import LogoTransparent from "../../public/LogoTransparent.png";
+import { useLocation } from "wouter";
+import HomePage from "../../public/Homepage/HomePage.jpg";
+import LogoTransparent from "../../public/Logo/LogoTransparent.png";
 
 const Homepage = () => {
+  const [_, setLocation] = useLocation();
+
   const navOptions = ["Work", "About", "Blog"];
+
   const projects = [
     {
       name: "DLF Capital Green",
-      link: "https://www.google.com/",
+      link: "/projects/DLF Capital Green",
     },
     {
       name: "Defence Colony",
-      link: "https://www.google.com/",
+      link: "/projects/Defence Colony",
     },
     {
       name: "Sky Barge",
-      link: "https://www.google.com/",
+      link: "/projects/Sky Barge",
     },
     {
       name: "Eldeco Aamantran",
-      link: "https://www.google.com/",
+      link: "/projects/Eldeco Aamantran",
     },
     {
       name: "Sarvodaya Enclave",
-      link: "https://www.google.com/",
+      link: "/projects/Sarvodaya Enclave",
     },
     {
       name: "Panchsheel Enclave",
-      link: "https://www.google.com/",
+      link: "/projects/Panchsheel Enclave",
     },
     {
       name: "GK 2",
-      link: "https://www.google.com/",
+      link: "/projects/GK 2",
     },
     {
       name: "Other Projects",
-      link: "https://www.google.com/",
+      link: "/projects/Other Projects",
     },
   ];
 
@@ -94,7 +98,7 @@ const Homepage = () => {
       <div className="md:h-10 h-5 " />
 
       <div className="max-w-7xl mx-auto px-5 ">
-        <img src={HomePage} />
+        <img src={HomePage} className="bg-orange-100 p-2 rounded-lg hover:opacity-85 " />
       </div>
 
       <div className="md:h-20 h-10 " />
@@ -133,7 +137,7 @@ const Homepage = () => {
         <div className="w-full max-w-7xl px-10 py-4 grid md:grid-cols-3 grid-cols-1 gap-4">
           {projects.map((val) => (
             <div
-              onClick={() => window.open(val.link)}
+              onClick={() => setLocation(val.link)}
               className="py-2 font-mono md:text-4xl text-2xl text-center text-gray-600 cursor-pointer hover:bg-orange-100 rounded-2xl "
             >
               {val.name}
