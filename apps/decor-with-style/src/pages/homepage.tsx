@@ -1,46 +1,39 @@
-import HomePage from "../../public/Homepage.jpg";
+import HomePage from "../../public/HomePage.jpg";
+import LogoTransparent from "../../public/LogoTransparent.png";
 
 const Homepage = () => {
   const navOptions = ["Work", "About", "Blog"];
   const projects = [
     {
-      name: "BATLA HOUSE",
+      name: "DLF Capital Green",
       link: "https://www.google.com/",
     },
     {
-      name: "Shaheen Bagh",
+      name: "Defence Colony",
       link: "https://www.google.com/",
     },
     {
-      name: "Mahrani Bagh",
+      name: "Sky Barge",
       link: "https://www.google.com/",
     },
     {
-      name: "Abu Fazal",
+      name: "Eldeco Aamantran",
       link: "https://www.google.com/",
     },
     {
-      name: "Zakir Nagar",
+      name: "Sarvodaya Enclave",
       link: "https://www.google.com/",
     },
     {
-      name: "BATLA HOUSE",
+      name: "Panchsheel Enclave",
       link: "https://www.google.com/",
     },
     {
-      name: "Shaheen Bagh",
+      name: "GK 2",
       link: "https://www.google.com/",
     },
     {
-      name: "Mahrani Bagh",
-      link: "https://www.google.com/",
-    },
-    {
-      name: "Abu Fazal",
-      link: "https://www.google.com/",
-    },
-    {
-      name: "Zakir Nagar",
+      name: "Other Projects",
       link: "https://www.google.com/",
     },
   ];
@@ -67,40 +60,44 @@ const Homepage = () => {
   return (
     <div className="bg-orange-50 text-black min-h-screen ">
       <div className="flex justify-between py-3 px-2 overflow-hidden ">
-        <div className="flex items-center gap-3 font-semibold ">
-          {navOptions.map((val, i) => (
-            <div key={i}>{val}</div>
-          ))}
+        <div className="flex items-center gap-3 font-semibold w-10 md:w-24 ">
+          <img src={LogoTransparent} height={100} width={100} />
         </div>
         <div className="font-semibold md:text-4xl font-serif">
           DECOR WITH STYLE
         </div>
-        <div className="flex items-center font-mono ">
-          decorwithstyle44@gmail.com
+        <div className="md:flex md:gap-3 gap-1 font-semibold md:text-base text-xs ">
+          {navOptions.map((val, i) => (
+            <div className="md:text-left text-right" key={i}>
+              {val}
+            </div>
+          ))}
         </div>
       </div>
 
-      <div className="flex justify-center py-10 ">
+      <div className="flex justify-center ">
         <div className="max-w-7xl ">
-          <h1 className="text-center font-semibold text-8xl ">
+          <h1 className="text-center font-semibold md:text-8xl text-4xl ">
             Interiors that reflect
           </h1>
-          <div className="flex justify-end items-center gap-2 pt-3">
-            <h1 className="font-serif border-2 rounded-full p-4">Since 2022</h1>
-            <h1 className="font-semibold text-8xl flex justify-center items-center ">
+          <div className="flex justify-end items-center gap-2 md:pt-3 pt-1">
+            <h1 className="font-serif md:text-5xl text-xl border-2 text-center rounded-full p-4">
+              Since 2022
+            </h1>
+            <h1 className="font-semibold md:text-8xl text-4xl flex justify-center items-center ">
               your style
             </h1>
           </div>
         </div>
       </div>
 
-      <div className="h-10" />
+      <div className="md:h-10 h-5 " />
 
-      <div className="max-w-7xl mx-auto ">
+      <div className="max-w-7xl mx-auto px-5 ">
         <img src={HomePage} />
       </div>
 
-      <div className="h-20" />
+      <div className="md:h-20 h-10 " />
 
       <div className="flex justify-center px-5 ">
         <div className="flex justify-between font-semibold pb-2 w-full max-w-7xl border-b-2 ">
@@ -111,26 +108,19 @@ const Homepage = () => {
 
       <div className="flex justify-center">
         <div className="w-full max-w-7xl px-10">
-          <div className="font-mono py-4">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-            repudiandae quo, magni nihil ab cumque laudantium doloribus iusto
-            perspiciatis deleniti expedita eveniet aut laboriosam repellat ullam
-            dignissimos quisquam! Modi, eaque. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Dicta officia quisquam natus,
-            excepturi hic veniam unde optio adipisci laboriosam asperiores.
-            Amet, aperiam culpa fuga suscipit sed labore quaerat ea rem! Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Ab, dolorem
-            consectetur cum unde molestiae vitae incidunt nesciunt eos, velit
-            reprehenderit ad nisi soluta enim sunt vero saepe, dolores obcaecati
-            iure. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eveniet, enim. Suscipit quaerat quos recusandae, aliquid tempore
-            autem accusamus impedit dignissimos quo! Nisi blanditiis, a tenetur
-            sapiente perferendis dolor asperiores doloremque.
+          <div className="font-mono md:text-2xl py-4">
+            Decor With Style is a company that provides inspiration, tips, and
+            ideas for interior design and home decor. We offer articles, guides,
+            and resources to help people enhance their living spaces with style.
+            Whether you're looking for advice on color schemes, furniture
+            arrangement, or DIY projects, Decor With Style aims to provide
+            valuable information to help you create a home that reflects your
+            personal taste and aesthetic preferences.
           </div>
         </div>
       </div>
 
-      <div className="h-20" />
+      <div className="md:h-20 h-10 " />
 
       <div className="flex justify-center px-5 ">
         <div className="flex justify-between font-semibold pb-2 w-full max-w-7xl border-b-2 ">
@@ -140,7 +130,7 @@ const Homepage = () => {
       </div>
 
       <div className="flex justify-center ">
-        <div className="w-full max-w-7xl px-10 py-4 grid md:grid-cols-3 grid-cols-1 gap-2">
+        <div className="w-full max-w-7xl px-10 py-4 grid md:grid-cols-3 grid-cols-1 gap-4">
           {projects.map((val) => (
             <div
               onClick={() => window.open(val.link)}
@@ -152,7 +142,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="h-10" />
+      <div className="md:h-10 h-5 " />
 
       <div className="flex justify-center px-5 ">
         <div className="flex justify-between font-semibold pb-2 w-full max-w-7xl border-b-2 ">
@@ -175,7 +165,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="h-10" />
+      <div className="md:h-10 h-5 " />
 
       <div className="flex justify-center px-5 ">
         <div className="flex justify-between font-semibold pb-2 w-full max-w-7xl border-b-2 ">
@@ -197,7 +187,7 @@ const Homepage = () => {
         </div>
       </div>
 
-      <div className="h-10" />
+      <div className="md:h-10 h-5 " />
 
       <div className="flex justify-center px-5 ">
         <div className="flex justify-between font-semibold pb-2 w-full max-w-7xl border-b-2 ">
@@ -217,7 +207,7 @@ const Homepage = () => {
             N-128/A, Abul Fazal Enclave Part 1
           </div>
           <div className="font-sans md:text-xl ">
-            Block J, Jamia Nagar, Okhla, New Delhi, Delhi 110025.
+            Jamia Nagar, Okhla, New Delhi, Delhi 110025.
           </div>
           <div className="pt-7">
             <div className="font-sans md:text-7xl text-5xl ">Let's</div>
@@ -225,8 +215,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-
-      <div className="h-10" />
+      <div className="md:h-10 h-5 " />
     </div>
   );
 };
